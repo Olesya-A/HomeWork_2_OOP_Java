@@ -58,13 +58,14 @@ public class CompetitionGameMain {
                 new WallObstacleAdapter(new Wall(40)),
                 new RoadObstacleAdapter(new Road(100)),
                 new RoadObstacleAdapter(new Road(45)),
-                new SwimmingPollObstacleAdapter(new SwimmingPoll(20))
+                new SwimmingPollObstacleAdapter(new SwimmingPoll(20)),
+                new ForestObstacleAdapter(new Forest(25))
             };
     }
 
     private static Participant[] createParticipants() {
         return new Participant[] {
-                new StandardParticipant("Igor", 50, 30, 20),
+                new StandardParticipant("Igor", 50, 30, 20, 30),
                 new Cat("Murzik", 60, 25),
                 new Cheater("Cheater")
         };
